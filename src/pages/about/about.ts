@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Camera, CameraOptions } from '@ionic-native/camera';
+//import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
 })
 export class AboutPage {
-  public base64Image: string;
+//  public base64Image: string;
 
-private  camera: Camera
+//private  camera: Camera
 
   constructor(public navCtrl: NavController ) {
 
   }
 
- prendrePhoto(){
+/*prendrePhoto(){
    const options: CameraOptions = {
   quality: 100,
   destinationType: this.camera.DestinationType.DATA_URL,
@@ -30,6 +30,6 @@ this.camera.getPicture(options).then((imageData) => {
 }, (err) => {
  // Handle error
 });
-}
+}*/
 
 }
