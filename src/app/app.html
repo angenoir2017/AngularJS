@@ -1,1 +1,15 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Immob</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-button="" *ngFor="let m of menus" click="onPage(m)">
+        {{m.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
 <ion-nav [root]="rootPage"></ion-nav>

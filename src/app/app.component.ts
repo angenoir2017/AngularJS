@@ -4,11 +4,22 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import { InscriptionPage } from '../pages/inscriptionPage/inscriptionpage';
+import { AboutPage } from '../pages/about/about';
+import { MarketPage } from '../pages/market/market';
+import { HomePage } from '../pages/home/home';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = TabsPage;
+
+  menus=[
+    {title:'Acceuil', component:HomePage},
+    {title:'Marche', component:MarketPage},
+    {title:'Parametres', component:InscriptionPage},
+    {title:'A propos de nous', component:AboutPage}
+  ];
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -17,5 +28,9 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+  }
+
+  onPage(m){
+    this.rootPage = m.component;
   }
 }
