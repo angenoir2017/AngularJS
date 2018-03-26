@@ -14,7 +14,7 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   rootPage:any = TabsPage;
 
-  menus=[
+  menus = [
     {title:'Acceuil', component:HomePage},
     {title:'Marche', component:MarketPage},
     {title:'Parametres', component:InscriptionPage},
@@ -31,6 +31,7 @@ export class MyApp {
   }
 
   onPage(m){
+    console.log("Ca marche le click");
     this.rootPage = m.component;
   }
 }

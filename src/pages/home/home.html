@@ -1,10 +1,15 @@
 <ion-header>
   <ion-navbar color ="primary">
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle start>
+        <ion-icon name="menu" ></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>
       <ion-icon name="leaf" item-start>
-    </ion-icon>Immob </ion-title>
-    <h6 color="light">Votre solution pour les acquisitions Immobilieres au Togo</h6>
-  </ion-navbar>
+    </ion-icon>Immob
+   </ion-title>
+      </ion-navbar>
 </ion-header>
 <ion-content padding>
   <h4>Acceuil</h4>
@@ -13,7 +18,7 @@
 </p>
   <p>
     <ion-fab>
-    <button ion-fab (tap)="showInscriptionPage()" ><ion-icon name="ionic" item-start></ion-icon>
+    <button ion-fab (tap)="showInscriptionPage()" ><ion-icon name="person" item-start></ion-icon>
 </button>
   </ion-fab>
   </p>
