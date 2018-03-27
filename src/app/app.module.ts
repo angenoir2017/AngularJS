@@ -32,7 +32,7 @@ import { MarketPage } from '../pages/market/market';
     AboutPage,
     MarketPage,
     InscriptionPage,
-  TabsPage
+    TabsPage
   ],
   providers: [
     StatusBar,

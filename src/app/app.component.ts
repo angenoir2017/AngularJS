@@ -15,10 +15,10 @@ export class MyApp {
   rootPage:any = TabsPage;
 
   menus = [
-    {title:'Acceuil', component:HomePage},
-    {title:'Marche', component:MarketPage},
-    {title:'Parametres', component:InscriptionPage},
-    {title:'A propos de nous', component:AboutPage}
+    {title:'Acceuil', component: HomePage},
+    {title:'Marche', component: MarketPage},
+    {title:'Parametres', component: InscriptionPage},
+    {title:'A propos de nous', component: AboutPage}
   ];
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -32,6 +32,6 @@ export class MyApp {
 
   onPage(m){
     console.log("Ca marche le click");
-    this.rootPage = m.component;
+    this.rootPage=m.component;
   }
 }
