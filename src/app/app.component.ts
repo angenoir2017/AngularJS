@@ -3,6 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
 import { TabsPage } from '../pages/tabs/tabs';
 import { InscriptionPage } from '../pages/inscriptionPage/inscriptionpage';
 import { AboutPage } from '../pages/about/about';
@@ -31,7 +32,7 @@ export class MyApp {
   }
 
   onPage(m){
-    console.log("Ca marche le click");
+  //  console.log("Ca marche le click");
     this.rootPage=m.component;
   }
 }

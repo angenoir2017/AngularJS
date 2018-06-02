@@ -1,25 +1,21 @@
 <ion-header>
-  <ion-navbar color ="primary">
-    <button ion-button icon-only menuToggle start>
-      <ion-icon name="menu" ></ion-icon>
-    </button>
+    <ion-navbar color ="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
     <ion-title>
       <ion-icon name="leaf" item-start>
-    </ion-icon>Immob </ion-title>
-    <p color="light">Votre solution pour les acquisitions Immobilieres au Togo</p>
+    </ion-icon>Leaf Bank
+  </ion-title>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content class="card-background-page">
 
 <!--<ion-searchbar placeholder="Recherche" (ionInput)="getItems($event)"></ion-searchbar> -->
-    <ion-searchbar placeholder="Recherche" ></ion-searchbar>
-
-    <!--
-        <ion-item *ngFor="let item of items">
-      {{ item }}
-    </ion-item>
-    -->
+    <ion-searchbar placeholder="Recherche" type="text" [(ngModel)]="motCle"></ion-searchbar> <button ion-button (click)="onSearch()" block round  color="light">Chercher</button>
 
     <ion-grid>
     <ion-row align-items-start>
@@ -27,10 +23,11 @@
         <ion-card >
       <ion-card-content>
         <ion-card-title>
-          Nine Inch Nails Live
+          {{contact.name}}
           </ion-card-title>
+          <img src="{{contact.image}}">
         <p>
-        Nine Inch Nails Live
+      {{contact.prenom}}
         </p>
       </ion-card-content>
     </ion-card>
@@ -175,159 +172,7 @@
 
       </ion-col>
     </ion-row>
-    <ion-row align-items-start>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-    </ion-row>
 
-    <ion-row align-items-center>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-    </ion-row>
-
-    <ion-row align-items-end>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card >
-      <ion-card-content>
-        <ion-card-title>
-          Nine Inch Nails Live
-          </ion-card-title>
-        <p>
-        Nine Inch Nails Live
-        </p>
-      </ion-card-content>
-    </ion-card>
-
-      </ion-col>
-    </ion-row>
   </ion-grid>
 
 
